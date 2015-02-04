@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Brick Wall</title>
+  <meta name="keywords" content="Brick Wall">
+  <meta name="description" content="Brick Wall">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/jquery-1.11.2.js"></script>
+  <script src="js/brickwall.js"></script>
+  <script>
+      $(window).load(function() {
+        $("#demo").brickwall({
+          rowBaseHeight: 100
+        });
+        $(window).resize(function(event) {
+          /* Act on the event */
+          $("#demo").brickwall({
+          rowBaseHeight: 100
+        });
+        });
+      });
+    </script>
+</head>
+<body>
+  <!--[if lt IE 9]>
+  <style>.browsehappy {margin: .2em;background: #ccc;color: #000;padding: .5em;}</style>
+  <p class="browsehappy">
+    您使用的浏览器 <strong>版本过低</strong>
+    ，请
+    <a href="http://browsehappy.com/">升级您的浏览器</a>
+    以获得更好的体验。
+  </p>
+  <script src="vendor/html5shiv.js"></script>
+  <![endif]-->
+  <!-- CONTENT -->
+  <h1>Brick Wall</h1>
+  <div class="brick-wall" id="demo">
+    <img class="brick-item" src="./img/古风古韵1.jpg" />
+    <img class="brick-item" src="./img/古风古韵2.jpg" />
+    <img class="brick-item" src="./img/古风古韵3.jpg" />
+    <img class="brick-item" src="./img/古风古韵4.jpg" />
+    <img class="brick-item" src="./img/古风古韵5.jpg" />
+    <img class="brick-item" src="./img/古风古韵6.jpg" />
+    <img class="brick-item" src="./img/古风古韵7.jpg" />
+    <img class="brick-item" src="./img/古风古韵8.jpg" />
+    <img class="brick-item" src="./img/古风古韵9.jpg" />
+    <img class="brick-item" src="./img/古风古韵10.jpg" />
+    <img class="brick-item" src="./img/古风古韵11.jpg" />
+    <img class="brick-item" src="./img/古风古韵12.jpg" />
+    <img class="brick-item" src="./img/古风古韵13.jpg" />
+    <img class="brick-item" src="./img/古风古韵14.jpg" />
+    <img class="brick-item" src="./img/古风古韵15.jpg" />
+    <img class="brick-item" src="./img/古风古韵16.jpg" />
+    <img class="brick-item" src="./img/古风古韵17.jpg" />
+    <img class="brick-item" src="./img/古风古韵18.jpg" />
+    <img class="brick-item" src="./img/古风古韵19.jpg" />
+    <img class="brick-item" src="./img/古风古韵20.jpg" />
+  </div>
+</body>
+</html>
