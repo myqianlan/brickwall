@@ -10,15 +10,14 @@
   <script src="js/jquery-1.11.2.js"></script>
   <script src="js/brickwall.js"></script>
   <script>
+  function doLayout() {
+      $("#demo").brickwall();
+      console.info("brick wall layout");
+    };
       $(window).load(function() {
-        $("#demo").brickwall({
-          rowBaseHeight: 100
-        });
+        doLayout();
         $(window).resize(function(event) {
-          /* Act on the event */
-          $("#demo").brickwall({
-          rowBaseHeight: 100
-        });
+          doLayout();
         });
       });
     </script>
@@ -35,6 +34,18 @@
   <script src="vendor/html5shiv.js"></script>
   <![endif]-->
   <!-- CONTENT -->
+  <style>
+  body{
+    margin: 0 10%;
+    background: #666;
+  }
+    #demo .brick-item{
+    transition: transform .3s;
+    }
+    #demo .brick-item:hover{
+      transform: scale(1.1);
+    }
+  </style>
   <h1>Brick Wall</h1>
   <div class="brick-wall" id="demo">
     <img class="brick-item" src="./img/古风古韵1.jpg" />
