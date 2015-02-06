@@ -7,6 +7,7 @@ BrickWall
 ##如何使用
 
 ```javascript
+    // #demo最好定宽
     $("#demo").brickwall();
 ```
 

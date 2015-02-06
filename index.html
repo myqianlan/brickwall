@@ -8,10 +8,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/jquery-1.11.2.js"></script>
+  <!-- // <script src="js/test.js"></script> -->
   <script src="js/brickwall.js"></script>
   <script>
+  var IMG_DATA = [
+    {width:800,height:600,src:"./img/古风古韵1.jpg"},
+    {width:598,height:356,src:"./img/古风古韵2.jpg"},
+    {width:616,height:430,src:"./img/古风古韵3.jpg"},
+    {width:778,height:583,src:"./img/古风古韵4.jpg"},
+    {width:480,height:720,src:"./img/古风古韵5.jpg"},
+    {width:760,height:300,src:"./img/古风古韵6.jpg"},
+    {width:1000,height:707,src:"./img/古风古韵7.jpg"},
+    {width:500,height:350,src:"./img/古风古韵8.jpg"},
+    {width:750,height:562,src:"./img/古风古韵9.jpg"},
+    {width:1024,height:768,src:"./img/古风古韵10.jpg"},
+    {width:800,height:600,src:"./img/古风古韵11.jpg"},
+    {width:1001,height:707,src:"./img/古风古韵12.jpg"},
+    {width:992,height:455,src:"./img/古风古韵13.jpg"},
+    {width:650,height:337,src:"./img/古风古韵14.jpg"},
+    {width:800,height:600,src:"./img/古风古韵15.jpg"},
+    {width:1001,height:750,src:"./img/古风古韵16.jpg"},
+    {width:780,height:551,src:"./img/古风古韵17.jpg"},
+    {width:800,height:600,src:"./img/古风古韵18.jpg"},
+    {width:1024,height:751,src:"./img/古风古韵19.jpg"},
+    {width:1024,height:727,src:"./img/古风古韵20.jpg"}
+    ]
+
+    // for( var prop in IMG_DATA){
+    //   console.info(IMG_DATA[prop]);
+    // }
   function doLayout() {
-      $("#demo").brickwall();
+      $("#demo").brickwall({brickMargin:5,rowBaseHeight: 250,data:IMG_DATA});
       console.info("brick wall layout");
     };
       $(window).load(function() {
@@ -20,6 +47,7 @@
           doLayout();
         });
       });
+    
     </script>
 </head>
 <body>
@@ -38,6 +66,11 @@
   body{
     margin: 0 10%;
     background: #666;
+    overflow: hidden;
+  }
+  #demo{
+    /*width: 600px;*/
+    /*height: 20px;*/
   }
     #demo .brick-item{
     transition: transform .3s;
@@ -48,26 +81,7 @@
   </style>
   <h1>Brick Wall</h1>
   <div class="brick-wall" id="demo">
-    <img class="brick-item" src="./img/古风古韵1.jpg" />
-    <img class="brick-item" src="./img/古风古韵2.jpg" />
-    <img class="brick-item" src="./img/古风古韵3.jpg" />
-    <img class="brick-item" src="./img/古风古韵4.jpg" />
-    <img class="brick-item" src="./img/古风古韵5.jpg" />
-    <img class="brick-item" src="./img/古风古韵6.jpg" />
-    <img class="brick-item" src="./img/古风古韵7.jpg" />
-    <img class="brick-item" src="./img/古风古韵8.jpg" />
-    <img class="brick-item" src="./img/古风古韵9.jpg" />
-    <img class="brick-item" src="./img/古风古韵10.jpg" />
-    <img class="brick-item" src="./img/古风古韵11.jpg" />
-    <img class="brick-item" src="./img/古风古韵12.jpg" />
-    <img class="brick-item" src="./img/古风古韵13.jpg" />
-    <img class="brick-item" src="./img/古风古韵14.jpg" />
-    <img class="brick-item" src="./img/古风古韵15.jpg" />
-    <img class="brick-item" src="./img/古风古韵16.jpg" />
-    <img class="brick-item" src="./img/古风古韵17.jpg" />
-    <img class="brick-item" src="./img/古风古韵18.jpg" />
-    <img class="brick-item" src="./img/古风古韵19.jpg" />
-    <img class="brick-item" src="./img/古风古韵20.jpg" />
+
   </div>
 </body>
 </html>
