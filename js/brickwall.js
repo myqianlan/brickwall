@@ -95,7 +95,9 @@
                     totleEnd += that.imgData[val[m]].width;
 
                 };
-                that.imgData[val[val.length - 1]].width += (that.$el.width()-0.5 - margin * val.length) - totleEnd;
+                if (val.length) {
+                 that.imgData[val[val.length - 1]].width += (that.$el.width()-0.5 - margin * val.length) - totleEnd;   
+                };
             });
             
         },
