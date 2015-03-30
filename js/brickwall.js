@@ -1,7 +1,7 @@
 /**
  *
  * @authors myqianlan (linquantan@gmail.com)
- * @date    2015年2月5日16:02:10
+ * @date    2015年3月30日13:41:21
  * @version $Id$
  */
 /*
@@ -11,7 +11,7 @@
  * 4. 获取每一个子容器里面内容的宽度，按照父容器宽度比例出高度。然后再次调整每个img的宽度数据；
  * 5. 将数据应用到图片
  */
-// resize时 0.5px 误差处理，原因：esize会出现元素宽度表现为带小数的，但是此刻JS获取到的是round过后的整数
+// resize时 0.5px 误差处理，原因：resize会出现元素宽度表现为带小数的，但是此刻JS获取到的是round过后的整数
 ;
 (function($, window, document, undefined) {
     "use strict";
