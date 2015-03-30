@@ -8,7 +8,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/jquery-1.11.2.js"></script>
-  <!-- // <script src="js/test.js"></script> -->
   <script src="js/brickwall.js"></script>
   <script>
   var IMG_DATA = [
@@ -38,7 +37,7 @@
     //   console.info(IMG_DATA[prop]);
     // }
   function doLayout() {
-      $("#demo").brickwall({brickMargin:5,rowBaseHeight: 250,data:IMG_DATA});
+      $("#demo").brickwall({brickMargin:5,rowBaseHeight: 150,data:IMG_DATA});
       console.info("brick wall layout");
     };
       $(window).load(function() {
@@ -64,7 +63,7 @@
   <!-- CONTENT -->
   <style>
   body{
-    margin: 0 10%;
+    margin: 0 2%;
     background: #666;
     overflow: hidden;
   }
@@ -81,7 +80,7 @@
   </style>
   <h1>Brick Wall</h1>
   <div class="brick-wall" id="demo">
-
   </div>
+  <a href="https://github.com/myqianlan/brickwall"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 </body>
 </html>
